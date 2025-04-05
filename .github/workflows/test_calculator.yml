@@ -1,11 +1,11 @@
 name: JavaCalculatorTest
 on:
-  pull-request:
-    branch:
-      -master
   push:
     branch:
-      -master
+      -main
+  pull-request:
+    branch:
+      -main
 jobs:
   windows-job:
     name: Test calculator
