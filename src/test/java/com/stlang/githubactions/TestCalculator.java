@@ -21,7 +21,7 @@ public class TestCalculator {
 
     @Test
     public void testSubtract() {
-        Assert.assertEquals(calculator.subtract(10, 2), 8)
+        Assert.assertEquals(calculator.subtract(10, 2), 8);
     }
     @AfterTest
     public void tearDown() {
