@@ -16,12 +16,12 @@ public class TestCalculator {
 
     @Test
     public void testAdd() {
-        Assert.assertEquals(calculator.add(2, 2), 4);
+        Assert.assertEquals(calculator.add(5, 5), 10);
     }
 
     @Test
     public void testSubtract() {
-        Assert.assertEquals(calculator.subtract(2, 2), 0);
+        Assert.assertEquals(calculator.subtract(10, 2), 8)
     }
     @AfterTest
     public void tearDown() {
