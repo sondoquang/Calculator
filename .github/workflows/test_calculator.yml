@@ -1,0 +1,22 @@
+name: JavaCalculatorTest
+on:
+  pull-request:
+    branch:
+      -master
+  push:
+    branch:
+      -master
+jobs:
+  windows-job:
+    name: Test calculator
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-versions: '17'
+      - name: Run project
+        run: mvn clean verify
